@@ -256,6 +256,11 @@ div .contact_btn {
     margin-left: 230px;
     margin-top: 50px;
 }
+
+textarea {
+    resize: none;
+}
+
 /*CONTACT FORM STYLES END*/
 
 /********************************INICIO DAS CLASSES PARA A MUDANÇA DE ESTILO NO THEME TOGGLE********************************/
