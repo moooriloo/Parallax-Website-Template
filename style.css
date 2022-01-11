@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+p {
+    text-align: justify;
+}
+ul, ol, li { 
+    list-style: none 
+}
+a { 
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+}
+body {
+    font: 'Poppins';
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.header_container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/*LOGO START*/
+
+.header_container .header_container_logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    width: 100px;
+    height: 110px;
+}
+.header_container_logo div {
+    background-image: url('./butterlogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 110px;
+}
+
+/*LOGO END*/
+
+.header_container .ul_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_container .ul_container li {
+    list-style: none;
+    margin-left: 20px;
+}
+.header_container .ul_container li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+.header_container .ul_container li a:hover,
+.header_container .ul_container li a:active {
+    background: #660000;
+    color: #ffff00;
+}
+.section_container {
+    position: relative;
+    width: 100%;
+    height: 200vh;
+}
+.section_container div {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow-x: hidden;
+}
+
+/*IMAGES STYLE*/
+
+.section_container_insetos {
+    z-index: 12;
+    background-image: url('./parallax_insetos.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section_container_flores {
+    z-index: 10;
+    background-image: url('./parallax_flores.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section_container_folhas {
+    z-index: 12;
+    background-image: url('./parallax_folhas.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section_container_folhas_costas {
+    z-index: 9;
+    background-image: url('./parallax_folhas_costas.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section_container_face {
+    z-index: 10;
+    background-image: url('./parallax_face.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section_container_jama {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 10vw;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.div_body {
+    
+
+}
+.bg_gradient {
+    background: linear-gradient(to top, #ff3300, #ffff00);
+}
+.div_container_sobre {
+    margin-top: 100px;
+    padding: 100px;
+    color: #660000;
+}
+.div_container_formacao {
+    padding: 100px;
+    color: #660000;
+}
+.div_container_experiencia {
+    padding: 100px;
+    color: #660000;
+}
+.div_container_contato {
+    padding: 100px;
+    color: #660000;
+}
+.page_wrapper {
+    background-color: transparent;
+}
+
+/*FOOTER START*/
+
+.footer_container {
+    height: 50px;
+    width: cover;
+    color: #ff3300;
+    background: #660000;
+}
+.footer_container_1 {
+    display: inline-block;
+    margin-left: 560px;
+    padding-top: 10px;
+}
+
+/*FOOTER END*/
+
+/*CORES DOS BOTÕES ATIVOS DO NAVBAR START*/
+
+.ul_container_sobre.active {
+    background: #660000;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+.ul_container_formacao.active {
+    background: #660000;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+.ul_container_sobre.active {
+    background: #660000;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+.ul_container_experiencia.active {
+    background: #660000;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+.ul_container_contato.active {
+    background: #660000;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/*CORES DOS BOTÕES ATIVOS DO NAVBAR END*/
+
+/*CONTACT FORM STYLES START*/
+
+.contact_form {
+    background:#660000;
+    border-left: 0px;
+    width: 1500px;
+    height: 500px;
+    border-radius: 500px;
+    display: grid;
+    margin-top: 30px;
+}
+div .contact_form_top {
+    display: grid;
+    margin-top: 10px;
+    width: 1000px;
+    margin-left: 230px;
+    margin-top: 50px;
+}
+div .contact_form_bottom {
+    display: grid;
+    margin-top: 0px;
+    width: 1000px;
+    margin-left: 230px;
+    margin-top: 50px;
+}
+div .contact_btn {
+    display: grid;
+    margin-top: 0px;
+    width: 100px;
+    height: 50px;
+    margin-left: 230px;
+    margin-top: 50px;
+}
+/*CONTACT FORM STYLES END*/
+
+/********************************INICIO DAS CLASSES PARA A MUDANÇA DE ESTILO NO THEME TOGGLE********************************/
+
+.night_theme .bg_gradient {
+    background: linear-gradient(to top, #6633cc, #33ff99);
+}
+.night_theme .div_container_formacao {
+    
+}
+.night_theme .header_container .ul_container li a:hover,
+.night_theme .header_container .ul_container li a:active{
+    background: #330066;
+    color: #00cc99;
+}
+.night_theme .div_container_sobre {
+    margin-top: 100px;
+    padding: 100px;
+    color: #330066;
+}
+.night_theme .div_container_formacao {
+    padding: 100px;
+    color: #330066;
+}
+.night_theme .div_container_experiencia {
+    padding: 100px;
+    color: #330066;
+}
+.night_theme .div_container_contato {
+    padding: 100px;
+    color: #330066;
+}
+.night_theme .footer_container {
+    background: #330066;
+    color: #6633cc;
+}
+
+/*LOGO NIGHT START*/
+
+.night_theme .header_container_logo div {
+    background-image: url('./butterlogo_noite.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 110px;
+}
+
+/*LOGO NIGHT END*/
+
+/*IMAGENS NIGHT THEME START*/
+
+.night_theme .section_container_insetos {
+    z-index: 12;
+    background-image: url('./parallax_insetos_noite.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.night_theme .section_container_flores {
+    z-index: 10;
+    background-image: url('./parallax_flores_noite.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.night_theme .section_container_folhas {
+    z-index: 12;
+    background-image: url('./parallax_folhas_noite.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.night_theme .section_container_folhas_costas {
+    z-index: 9;
+    background-image: url('./parallax_folhas_costas_noite.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.night_theme .section_container_face {
+    z-index: 10;
+    background-image: url('./parallax_face_noite.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*IMAGES NIGHT THEME END*/
+
+/*CORES DOS BOTÕES ATIVOS DO NAVBAR START*/
+
+.night_theme .ul_container_sobre.active {
+    background: #330066;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+.night_theme .ul_container_formacao.active {
+    background: #330066;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+.night_theme .ul_container_experiencia.active {
+    background: #330066;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+.night_theme .ul_container_contato.active {
+    background: #330066;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+.night_theme .header_container .ul_container li a:hover,
+.night_theme .header_container .ul_container li a:active {
+    background: #330066;
+    color: #33ff99;
+}
+/*CORES DOS BOTÕES ATIVOS DO NAVBAR END*/
+
+/*FOOTER NIGHT START*/
+
+.night_theme .footer_container {
+    height: 50px;
+    width: cover;
+    color: #6633cc;
+    background: #330066;
+}
+
+/*FOOTER NIGHT END*/
+
+/*CONTACT FORM NIGHT START*/
+
+.night_theme .contact_form {
+    background:#330066;
+    border-left: 0px;
+    width: 1500px;
+    height: 500px;
+    border-radius: 500px;
+    display: grid;
+    margin-top: 30px;
+}
+.night_theme div .contact_form_top {
+    display: grid;
+    margin-top: 10px;
+    width: 1000px;
+    margin-left: 230px;
+    margin-top: 50px;
+}
+.night_theme div .contact_form_bottom {
+    display: grid;
+    margin-top: 0px;
+    width: 1000px;
+    margin-left: 230px;
+    margin-top: 50px;
+}
+.night_theme div .contact_btn {
+    display: grid;
+    margin-top: 0px;
+    width: 100px;
+    height: 50px;
+    margin-left: 230px;
+    margin-top: 50px;
+}
